@@ -22,8 +22,8 @@ class MarketFactory extends Factory
         return [
             'name'=>$name,
             'address'=>$faker->address(),
-            'value'=>$faker->randomFloat(2,1000,10000000),
-            'employees_quantity'=>$faker->numberBetween(1,4),
+            'value'=>$faker->randomFloat(2,1000,30000000),
+            'employees_quantity'=>$faker->numberBetween(1,10000),
             'occupancy_rate'=>$faker->randomFloat(2,1,100),
             'status'=>$faker->boolean()
         ];
